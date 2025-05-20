@@ -105,8 +105,8 @@
     <br><br>
 
     <!-- chatbot ai che usa la mia chiave api personale di openai-->
-    <!-- <div class = "div_chatbot">
-        <h2 >Chiedi come dare una giusta valutazione all'assistente AI</h2>
+     <div class = "div_chatbot">
+        <h2 >Chiedi che ristorante inserire all'assistente AI</h2>
         <textarea  id="message" placeholder="Scrivi un messaggio..." rows="2" cols="50"></textarea>
         <button onclick="sendMessage()">Invia</button>
         <div id="response"></div>
@@ -115,7 +115,7 @@
             function sendMessage() {
                 const message = document.getElementById('message').value;
 
-                fetch('../chatbot/chatbot.php', {
+                fetch('../chatbot/chatbotAdmin.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded'
@@ -128,7 +128,7 @@
                 });
             }
         </script>
-    </div>-->
+    </div>
     <br>
     <br>
     <a  href="logout.php">Logout</a>
