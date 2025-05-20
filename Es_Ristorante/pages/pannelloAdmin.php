@@ -47,6 +47,8 @@
                             <th>Nome</th>
                             <th>Indirizzo</th>
                             <th>citta</th>
+                            <th>Latitudine</th>
+                            <th>Longitudine</th>
                             <th>Recensioni</th></tr>";
                 while($row=$result-> fetch_assoc()){
                     $stampa.="<tr>
@@ -54,6 +56,8 @@
                     <td>".$row['nome']."</td>
                     <td>".$row['indirizzo']."</td>
                     <td>".$row['citta']."</td>
+                    <td>".$row['latitudine']."</td>
+                    <td>".$row['longitudine']."</td>
                     <td>".$row['numr']."</td></tr>";
                 }
 
@@ -83,6 +87,14 @@
                 <div class="mb-3">
                     <label for="citta" class="form-label">Citta</label>
                     <input type="text" class="form-control" name="citta" id="citta" required>
+                </div>
+                <div class="mb-3">
+                    <label for="latitudine" class="form-label">Latitudine</label>
+                    <input type="text" class="form-control" name="latitudine" id="latitudine" required>
+                </div>                   
+                <div class="mb-3">
+                    <label for="longitudine" class="form-label">Longitudine</label>
+                    <input type="text" class="form-control" name="longitudine" id="longitudine" required>
                 </div>
                 <br> 
                 <?php
